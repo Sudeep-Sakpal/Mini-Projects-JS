@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.app-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.app-card:hover {
+  transform: translateY(-5px);
+}
+
+.app-title {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Stopwatch Styles */
+.stopwatch {
+  width: 300px;
+}
+
+.time-display {
+  font-size: 48px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #444;
+  font-family: "Courier New", monospace;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px solid #e9ecef;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.btn-start {
+  background: #28a745;
+  color: white;
+}
+
+.btn-start:hover {
+  background: #218838;
+  transform: scale(1.05);
+}
+
+.btn-stop {
+  background: #dc3545;
+  color: white;
+}
+
+.btn-stop:hover {
+  background: #c82333;
+  transform: scale(1.05);
+}
+
+.btn-reset {
+  background: #6c757d;
+  color: white;
+}
+
+.btn-reset:hover {
+  background: #5a6268;
+  transform: scale(1.05);
+}
+
+/* Calculator Styles */
+.calculator {
+  width: 320px;
+}
+
+.calc-display {
+  width: 100%;
+  height: 80px;
+  font-size: 32px;
+  text-align: right;
+  padding: 20px;
+  border: 2px solid #e9ecef;
+  border-radius: 15px;
+  background: #f8f9fa;
+  margin-bottom: 20px;
+  color: #444;
+  font-family: "Courier New", monospace;
+}
+
+.calc-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.calc-btn {
+  height: 60px;
+  border: none;
+  border-radius: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.calc-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.calc-btn:active {
+  transform: translateY(0);
+}
+
+.calc-btn.number {
+  background: #f8f9fa;
+  color: #333;
+  border: 1px solid #dee2e6;
+}
+
+.calc-btn.operator {
+  background: #007bff;
+  color: white;
+}
+
+.calc-btn.operator:hover {
+  background: #0056b3;
+}
+
+.calc-btn.equals {
+  background: #28a745;
+  color: white;
+}
+
+.calc-btn.equals:hover {
+  background: #218838;
+}
+
+.calc-btn.clear {
+  background: #dc3545;
+  color: white;
+}
+
+.calc-btn.clear:hover {
+  background: #c82333;
+}
+
+.calc-btn.zero {
+  grid-column: span 2;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .app-card {
+    padding: 20px;
+  }
+
+  .stopwatch,
+  .calculator {
+    width: 100%;
+    max-width: 300px;
+  }
+}

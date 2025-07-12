@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Voice Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Text to Voice</h1>
+        
+        <div class="input-section">
+            <label for="textInput">Enter text to convert:</label>
+            <textarea id="textInput" placeholder="Type your text here..." maxlength="1000"></textarea>
+        </div>
+
+        <div class="controls">
+            <div class="control-group">
+                <label for="voiceSelect">Voice:</label>
+                <select id="voiceSelect">
+                    <option value="">Select a voice...</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button id="speakBtn" class="speak-btn">Speak</button>
+            <button id="pauseBtn" class="pause-btn">Pause</button>
+            <button id="stopBtn" class="stop-btn">Stop</button>
+        </div>
+
+        <div id="status" class="status">Ready to speak</div>
+    </div>
+
+</body>
+<script src="script.js" defer></script>
+</html>

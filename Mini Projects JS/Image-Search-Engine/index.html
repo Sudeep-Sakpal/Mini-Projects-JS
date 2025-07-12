@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Search Engine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Image Search Engine</h1>
+            <p>Discover beautiful images from Unsplash</p>
+        </div>
+
+        <div class="search-container">
+            <input type="text" class="search-input" id="searchInput" placeholder="Search for images...">
+            <button class="search-btn" id="searchBtn">Search</button>
+        </div>
+
+        <div class="loading" id="loading">Searching for images</div>
+        <div class="error-message" id="errorMessage"></div>
+        <div class="no-results" id="noResults">No images found. Try searching for something else!</div>
+
+        <div class="results-container" id="resultsContainer"></div>
+    </div>
+    
+</body>
+<script src="script.js" defer></script>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="music-player">
+        <div class="album-art">
+            <div class="music-icon">🎵</div>
+        </div>
+
+        <div class="track-info">
+            <div class="track-title" id="trackTitle">Summer Vibes</div>
+            <div class="track-artist" id="trackArtist">Chill Beats</div>
+        </div>
+
+        <div class="visualizer" id="visualizer">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar">
+                <div class="progress" id="progress"></div>
+            </div>
+            <div class="time-display">
+                <span id="currentTime">0:00</span>
+                <span id="totalTime">3:42</span>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="control-btn" id="prevBtn">⏮</button>
+            <button class="control-btn play-btn" id="playBtn">▶</button>
+            <button class="control-btn" id="nextBtn">⏭</button>
+        </div>
+
+        <div class="volume-container">
+            <div class="volume-icon">🔊</div>
+            <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="70">
+        </div>
+
+        <div class="shuffle-repeat">
+            <button class="mode-btn" id="shuffleBtn">🔀</button>
+            <button class="mode-btn" id="repeatBtn">🔁</button>
+        </div>
+
+        <div class="playlist">
+            <div class="playlist-title">Now Playing</div>
+            <div class="playlist-item active" data-index="0">
+                <div>
+                    <div class="track-name">Summer Vibes</div>
+                    <div class="track-duration">3:42</div>
+                </div>
+            </div>
+            <div class="playlist-item" data-index="1">
+                <div>
+                    <div class="track-name">Midnight Dreams</div>
+                    <div class="track-duration">4:15</div>
+                </div>
+            </div>
+            <div class="playlist-item" data-index="2">
+                <div>
+                    <div class="track-name">Ocean Waves</div>
+                    <div class="track-duration">3:28</div>
+                </div>
+            </div>
+            <div class="playlist-item" data-index="3">
+                <div>
+                    <div class="track-name">City Lights</div>
+                    <div class="track-duration">4:01</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="script.js" defer></script>
+</html>

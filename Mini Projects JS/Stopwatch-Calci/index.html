@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch & Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Stopwatch -->
+        <div class="app-card">
+            <h2 class="app-title">⏱️ Stopwatch</h2>
+            <div class="stopwatch">
+                <div class="time-display" id="timeDisplay">00:00:00</div>
+                <div class="controls">
+                    <button class="btn btn-start" id="startBtn">Start</button>
+                    <button class="btn btn-stop" id="stopBtn">Stop</button>
+                    <button class="btn btn-reset" id="resetBtn">Reset</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Calculator -->
+        <div class="app-card">
+            <h2 class="app-title">🧮 Calculator</h2>
+            <div class="calculator">
+                <input type="text" class="calc-display" id="calcDisplay" readonly>
+                <div class="calc-buttons">
+                    <button class="calc-btn clear" onclick="clearDisplay()">C</button>
+                    <button class="calc-btn operator" onclick="deleteLast()">⌫</button>
+                    <button class="calc-btn operator" onclick="appendToDisplay('/')">/</button>
+                    <button class="calc-btn operator" onclick="appendToDisplay('*')">×</button>
+
+                    <button class="calc-btn number" onclick="appendToDisplay('7')">7</button>
+                    <button class="calc-btn number" onclick="appendToDisplay('8')">8</button>
+                    <button class="calc-btn number" onclick="appendToDisplay('9')">9</button>
+                    <button class="calc-btn operator" onclick="appendToDisplay('-')">-</button>
+
+                    <button class="calc-btn number" onclick="appendToDisplay('4')">4</button>
+                    <button class="calc-btn number" onclick="appendToDisplay('5')">5</button>
+                    <button class="calc-btn number" onclick="appendToDisplay('6')">6</button>
+                    <button class="calc-btn operator" onclick="appendToDisplay('+')">+</button>
+
+                    <button class="calc-btn number" onclick="appendToDisplay('1')">1</button>
+                    <button class="calc-btn number" onclick="appendToDisplay('2')">2</button>
+                    <button class="calc-btn number" onclick="appendToDisplay('3')">3</button>
+                    <button class="calc-btn equals" onclick="calculate()" rowspan="2">=</button>
+
+                    <button class="calc-btn number zero" onclick="appendToDisplay('0')">0</button>
+                    <button class="calc-btn number" onclick="appendToDisplay('.')">.</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="script.js" defer></script>
+</html>

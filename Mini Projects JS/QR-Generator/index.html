@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>QR Code Generator</h1>
+
+        <div class="input-group">
+            <input type="text" id="textInput" placeholder="Enter text or URL to generate QR code..." maxlength="1000">
+            <div class="error-message" id="errorMessage">Please enter some text to generate QR code!</div>
+        </div>
+
+        <button class="generate-btn" id="generateBtn" onclick="generateQR()">
+            Generate QR Code
+        </button>
+
+        <div class="qr-container" id="qrContainer">
+            <!-- QR code will be displayed here -->
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">⚡</div>
+                <div>Fast Generation</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📱</div>
+                <div>Mobile Friendly</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🎨</div>
+                <div>High Quality</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">💾</div>
+                <div>Downloadable</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+    <script> src = "script.js"</script>
+</body>
+<script src="script.js" defer></script>
+</html>
