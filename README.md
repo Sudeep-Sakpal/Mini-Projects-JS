@@ -1,6 +1,4 @@
-# Mini-Projects-JS
-
-# 🚀 11 Vanilla JavaScript Mini Projects
+# 🚀 Mini-Projects-JS
 
 Welcome to my collection of 11 beginner-to-intermediate mini projects built entirely with HTML, CSS, and Vanilla JavaScript — no frameworks, no libraries, just pure JavaScript fun!
 
